@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Decks4Sale</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="/">Decks4Sale</a>
+        <div class="navbar-nav">
+            <div class="row ml-2 float-right">
+                <a class="nav-item nav-link active" href="/buy">Buy Deck<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/sell">Sell Deck</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+
+    <!-- FOOTER -->
+
+    <div class="bg-secondary p-5 text-white">
+        &copy; Cards Inc.
+    </div>
+
+</body>
+
+</html>
